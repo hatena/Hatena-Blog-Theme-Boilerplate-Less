@@ -747,6 +747,7 @@ a.keyword {
   border: 1px solid #dddddd;
   margin: 0 0 10px;
   padding: 20px;
+  white-space: pre;
 }
 .entry-content pre > code {
   margin: 0;
