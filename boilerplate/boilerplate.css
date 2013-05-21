@@ -526,6 +526,9 @@ a.keyword {
   clear: both;
   content: ".";
 }
+.globalheader-off #container {
+  padding-top: 0;
+}
 /* 2カラムレイアウト */
 #main {
   width: 600px;
@@ -1105,28 +1108,13 @@ a.keyword {
 /* Media Queries - Tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
   #container {
-    width: 93.75%;
-    word-wrap: break-word;
-    overflow: hidden;
+    width: 724px;
   }
   #main {
-    width: 100%;
-    float: none;
+    width: 460px;
   }
   #box2 {
-    width: 100%;
-    float: none;
-  }
-  #box2-inner {
-    width: 100%;
-  }
-  .hatena-module {
-    width: 100%;
-    float: none;
-  }
-  .entry-header-menu {
-    top: -30px;
-    left: 0px;
+    width: 245px;
   }
 }
 /* Media Queries - Small Tablet & Smartphone */
@@ -1153,6 +1141,10 @@ a.keyword {
   .hatena-module {
     width: 100%;
     float: none;
+  }
+  .entry-header-menu {
+    top: -30px;
+    left: 0px;
   }
 }
 /* Media Queries - Smartphone */

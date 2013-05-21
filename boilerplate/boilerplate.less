@@ -112,11 +112,15 @@ a.keyword {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    padding-top: 37px;
+    padding-top: 37px; // グローバルヘッダを fixed にしているため
 
     #content {
         .clearfix;
     }
+}
+
+.globalheader-off #container {
+    padding-top: 0; // グローバルヘッダ非表示の時
 }
 
 /* 2カラムレイアウト */
