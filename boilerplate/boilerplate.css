@@ -803,6 +803,9 @@ a.keyword {
 .comment-box li:first-child {
   border-top: 1px solid #dddddd;
 }
+.comment-box .read-more-comments {
+  padding-left: 0;
+}
 .comment-box .hatena-id-icon {
   position: absolute;
   top: 10px;
