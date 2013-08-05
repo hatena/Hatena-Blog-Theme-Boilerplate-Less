@@ -69,6 +69,8 @@ html {
   /* 1 */
 
   -webkit-text-size-adjust: 100%;
+  /* 2 */
+
   -ms-text-size-adjust: 100%;
   /* 2 */
 
@@ -728,6 +730,9 @@ a.keyword {
   border-collapse: collapse;
   border-spacing: 0;
   margin-bottom: 1em;
+}
+.entry-content table img {
+  max-width: none;
 }
 .entry-content table th,
 .entry-content table td {
