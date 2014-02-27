@@ -576,24 +576,19 @@ a.keyword {
 /* Pager */
 
 .pager {
-    margin: 20px 0;
-    padding: 20px 0;
-    text-align: center;
-    border-top: 1px solid @border;
-    border-bottom: 1px solid @border;
-    font-size: 80%;
-    font-weight: bold;
+    margin: 1em 0;
+    .clearfix;
 
-    a {
-        color: @text;
-        text-decoration: none;
-        &:hover {
-            text-decoration: underline;
-        }
+    .pager-prev {
+        float: left;
+        text-align: left;
+        width: 45%;
     }
 
     .pager-next {
-        margin-right: 1em;
+        float: right;
+        text-align: right;
+        width: 45%;
     }
 
 }
@@ -638,19 +633,25 @@ a.keyword {
 
 .page-archive {
 
-    #main {
+    .archive-entries {
 
-        section {
-            margin-bottom: 20px;
+        .archive-entry {
+            margin-bottom: 3em;
         }
 
-        h1 {
-            font-size: 100%;
-            margin-bottom: 0;
+        .entry-title {
+            font-size: 130%;
+            margin: 0 0 .5em;
         }
 
-        ul {
-            .hatena-urllist;
+        .categories {
+            margin: 0 0 .5em;
+        }
+
+        .entry-description {
+            margin: 0 0 1em;
+            line-height: 1.7em;
+            font-size: 95%;
         }
 
     }
