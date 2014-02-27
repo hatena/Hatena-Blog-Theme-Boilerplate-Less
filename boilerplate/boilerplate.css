@@ -1036,23 +1036,27 @@ a.keyword {
 }
 /* Pager */
 .pager {
-  margin: 20px 0;
-  padding: 20px 0;
-  text-align: center;
-  border-top: 1px solid #dddddd;
-  border-bottom: 1px solid #dddddd;
-  font-size: 80%;
-  font-weight: bold;
+  margin: 1em 0;
+  display: block;
+  *zoom: 1;
 }
-.pager a {
-  color: #454545;
-  text-decoration: none;
+.pager:after {
+  display: block;
+  visibility: hidden;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  content: ".";
 }
-.pager a:hover {
-  text-decoration: underline;
+.pager .pager-prev {
+  float: left;
+  text-align: left;
+  width: 45%;
 }
 .pager .pager-next {
-  margin-right: 1em;
+  float: right;
+  text-align: right;
+  width: 45%;
 }
 /* Footer */
 #footer {
@@ -1080,25 +1084,20 @@ a.keyword {
   margin-bottom: 30px;
 }
 /* archive ページ */
-.page-archive #main section {
-  margin-bottom: 20px;
+.page-archive .archive-entries .archive-entry {
+  margin-bottom: 3em;
 }
-.page-archive #main h1 {
-  font-size: 100%;
-  margin-bottom: 0;
+.page-archive .archive-entries .entry-title {
+  font-size: 130%;
+  margin: 0 0 .5em;
 }
-.page-archive #main ul {
-  list-style: none;
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
+.page-archive .archive-entries .categories {
+  margin: 0 0 .5em;
 }
-.page-archive #main ul li {
-  padding: 8px 0;
-  border-bottom: 1px solid #dddddd;
-  line-height: 1.5;
-}
-.page-archive #main ul li a {
-  text-decoration: none;
+.page-archive .archive-entries .entry-description {
+  margin: 0 0 1em;
+  line-height: 1.7em;
+  font-size: 95%;
 }
 .page-archive .categories a {
   color: #fff;
