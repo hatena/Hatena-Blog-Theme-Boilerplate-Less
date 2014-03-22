@@ -31,14 +31,14 @@
     background-clip: padding-box;
 }
 
-.gradient(@color: #F5F5F5, @start: #FFFFFF, @stop: #EEEEEE) {
+.gradient(@color: #f5f5f5, @start: #fff, @stop: #eee) {
     background: @color;
     background: -webkit-gradient(linear, left top, left bottom, from(@start), to(@stop));
     background: -ms-linear-gradient(top, @start, @stop);
     background: -moz-linear-gradient(top, @start 0%, @stop 100%);
 }
 
-.opacity(@opacity: 0.25) {
+.opacity(@opacity: .25) {
     opacity: @opacity;
 
     // opacity=(@opacity*100))でコンパイルエラーが起きるため変数追加
@@ -52,20 +52,20 @@
     overflow: hidden;
 }
 
-.transition(@duration:0.2s, @ease:ease-out) {
+.transition(@duration:.2s, @ease:ease-out) {
     transition: all @duration @ease;
 }
 
-.transition-duration(@duration: 0.2s) {
+.transition-duration(@duration: .2s) {
     transition-duration: @duration;
 }
 
-.rotation(@deg:5deg){
+.rotation(@deg:5deg) {
     transform: rotate(@deg);
 }
 
-.scale(@ratio:1.5){
-    transform:scale(@ratio);
+.scale(@ratio:1.5) {
+    transform: scale(@ratio);
 }
 
 .translate(@x:0, @y:0) {
