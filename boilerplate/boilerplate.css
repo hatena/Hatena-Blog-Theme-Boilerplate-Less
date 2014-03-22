@@ -368,22 +368,10 @@ th {
   padding: 0;
 }
 /*  import mixin */
-.clearfix {
-  display: block;
-  *zoom: 1;
-}
 .clearfix:after {
   display: block;
-  visibility: hidden;
-  font-size: 0;
-  height: 0;
   clear: both;
-  content: ".";
-}
-.inline-block {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
+  content: "";
 }
 .ellipsis {
   white-space: nowrap;
@@ -447,8 +435,6 @@ a.keyword {
 /* Buttons */
 .btn {
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
   padding: 4px 10px 4px;
   margin-bottom: 0;
   line-height: 18px;
@@ -503,17 +489,10 @@ a.keyword {
   margin-bottom: 30px;
   padding-top: 37px;
 }
-#container #content {
-  display: block;
-  *zoom: 1;
-}
 #container #content:after {
   display: block;
-  visibility: hidden;
-  font-size: 0;
-  height: 0;
   clear: both;
-  content: ".";
+  content: "";
 }
 .globalheader-off #container {
   padding-top: 0;
@@ -635,8 +614,6 @@ a.keyword {
 }
 .entry-header-menu a {
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
   padding: 4px 10px 4px;
   margin-bottom: 0;
   line-height: 18px;
@@ -821,8 +798,6 @@ a.keyword {
 }
 .leave-comment-title {
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
   padding: 4px 10px 4px;
   margin-bottom: 0;
   line-height: 18px;
@@ -949,16 +924,11 @@ a.keyword {
 /* Pager */
 .pager {
   margin: 1em 0;
-  display: block;
-  *zoom: 1;
 }
 .pager:after {
   display: block;
-  visibility: hidden;
-  font-size: 0;
-  height: 0;
   clear: both;
-  content: ".";
+  content: "";
 }
 .pager .pager-prev {
   float: left;
@@ -1019,8 +989,6 @@ a.keyword {
   border-radius: 3px;
   text-decoration: none;
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
   margin-right: 2px;
 }
 /*  import media queries */
