@@ -1,20 +1,9 @@
 .clearfix {
-    display: block;
-    *zoom: 1;
   	&:after {
         display: block;
-        visibility: hidden;
-        font-size: 0;
-        height: 0;
         clear: both;
-        content: ".";
+        content: "";
   	}
-}
-
-.inline-block {
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
 }
 
 .box-shadow (@x: 0, @y: 0, @blur: 25px, @color: rgba(0,0,0,.20)) {
