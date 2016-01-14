@@ -51,10 +51,6 @@
 
 .opacity(@opacity: 0.25) {
     opacity: @opacity;
-
-    // opacity=(@opacity*100))でコンパイルエラーが起きるため変数追加
-    @ms-opacity: @opacity*100;
-    filter: alpha(opacity=@ms-opacity);
 }
 
 .ellipsis {

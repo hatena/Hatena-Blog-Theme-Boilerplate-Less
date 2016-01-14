@@ -943,11 +943,9 @@ a.keyword {
   top: 5px;
   right: 5px;
   opacity: 0.5;
-  filter: alpha(opacity=50);
 }
 .hatena-module-search-box .search-module-button:hover {
   opacity: 0.85;
-  filter: alpha(opacity=50);
 }
 /* Pager */
 .pager {
