@@ -947,7 +947,7 @@ a.keyword {
 }
 .hatena-module-search-box .search-module-button:hover {
   opacity: 0.85;
-  filter: alpha(opacity=85);
+  filter: alpha(opacity=50);
 }
 /* Pager */
 .pager {
@@ -1046,20 +1046,20 @@ a.keyword {
     width: 245px;
   }
   /* 1カラムにしたい場合は下記のコメントアウトを外してください ----
-                                                                                                                                                                                        #main,
-                                                                                                                                                                                        #box2 {
-                                                                                                                                                                                            width: 100%;
-                                                                                                                                                                                        }
+      #main,
+      #box2 {
+          width: 100%;
+      }
   
-                                                                                                                                                                                        #box2-inner {
-                                                                                                                                                                                            width: 744px;
+      #box2-inner {
+          width: 744px;
   
-                                                                                                                                                                                        }
+      }
   
-                                                                                                                                                                                        .hatena-module {
-                                                                                                                                                                                            width: 228px;
-                                                                                                                                                                                        }
-                                                                                                                                                                                    ---- END 1カラム */
+      .hatena-module {
+          width: 228px;
+      }
+  ---- END 1カラム */
 }
 /* Media Queries - Small Tablet & Smartphone */
 @media (max-width: 767px) {

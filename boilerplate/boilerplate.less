@@ -12,524 +12,129 @@
 
   Licensed under the MIT license.
 */
+
 /*  import normalize */
-/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
-/**
- * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
- */
-html {
-  font-family: sans-serif;
-  /* 1 */
+@import "less/_normalize.less";
 
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-
-}
-/**
- * Remove default margin.
- */
-body {
-  margin: 0;
-}
-/* HTML5 display definitions
-   ========================================================================== */
-/**
- * Correct `block` display not defined in IE 8/9.
- */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-  display: block;
-}
-/**
- * 1. Correct `inline-block` display not defined in IE 8/9.
- * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
- */
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-  /* 1 */
-
-  vertical-align: baseline;
-  /* 2 */
-
-}
-/**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-/**
- * Address `[hidden]` styling not present in IE 8/9.
- * Hide the `template` element in IE, Safari, and Firefox < 22.
- */
-[hidden],
-template {
-  display: none;
-}
-/* Links
-   ========================================================================== */
-/**
- * Remove the gray background color from active links in IE 10.
- */
-a {
-  background: transparent;
-}
-/**
- * Improve readability when focused and also mouse hovered in all browsers.
- */
-a:active,
-a:hover {
-  outline: 0;
-}
-/* Text-level semantics
-   ========================================================================== */
-/**
- * Address styling not present in IE 8/9, Safari 5, and Chrome.
- */
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-/**
- * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
- */
-b,
-strong {
-  font-weight: bold;
-}
-/**
- * Address styling not present in Safari 5 and Chrome.
- */
-dfn {
-  font-style: italic;
-}
-/**
- * Address variable `h1` font-size and margin within `section` and `article`
- * contexts in Firefox 4+, Safari 5, and Chrome.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-/**
- * Address styling not present in IE 8/9.
- */
-mark {
-  background: #ff0;
-  color: #000;
-}
-/**
- * Address inconsistent and variable font size in all browsers.
- */
-small {
-  font-size: 80%;
-}
-/**
- * Prevent `sub` and `sup` affecting `line-height` in all browsers.
- */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-sup {
-  top: -0.5em;
-}
-sub {
-  bottom: -0.25em;
-}
-/* Embedded content
-   ========================================================================== */
-/**
- * Remove border when inside `a` element in IE 8/9.
- */
-img {
-  border: 0;
-}
-/**
- * Correct overflow displayed oddly in IE 9.
- */
-svg:not(:root) {
-  overflow: hidden;
-}
-/* Grouping content
-   ========================================================================== */
-/**
- * Address margin not present in IE 8/9 and Safari 5.
- */
-figure {
-  margin: 1em 40px;
-}
-/**
- * Address differences between Firefox and other browsers.
- */
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
-}
-/**
- * Contain overflow in all browsers.
- */
-pre {
-  overflow: auto;
-}
-/**
- * Address odd `em`-unit font size rendering in all browsers.
- */
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-/* Forms
-   ========================================================================== */
-/**
- * Known limitation: by default, Chrome and Safari on OS X allow very limited
- * styling of `select`, unless a `border` property is set.
- */
-/**
- * 1. Correct color not being inherited.
- *    Known issue: affects color of disabled elements.
- * 2. Correct font properties not being inherited.
- * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
- */
-button,
-input,
-optgroup,
-select,
-textarea {
-  color: inherit;
-  /* 1 */
-
-  font: inherit;
-  /* 2 */
-
-  margin: 0;
-  /* 3 */
-
-}
-/**
- * Address `overflow` set to `hidden` in IE 8/9/10.
- */
-button {
-  overflow: visible;
-}
-/**
- * Address inconsistent `text-transform` inheritance for `button` and `select`.
- * All other form control elements do not inherit `text-transform` values.
- * Correct `button` style inheritance in Firefox, IE 8+, and Opera
- * Correct `select` style inheritance in Firefox.
- */
-button,
-select {
-  text-transform: none;
-}
-/**
- * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
- *    and `video` controls.
- * 2. Correct inability to style clickable `input` types in iOS.
- * 3. Improve usability and consistency of cursor style between image-type
- *    `input` and others.
- */
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */
-
-  cursor: pointer;
-  /* 3 */
-
-}
-/**
- * Re-set default cursor for disabled elements.
- */
-button[disabled],
-html input[disabled] {
-  cursor: default;
-}
-/**
- * Remove inner padding and border in Firefox 4+.
- */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-/**
- * Address Firefox 4+ setting `line-height` on `input` using `!important` in
- * the UA stylesheet.
- */
-input {
-  line-height: normal;
-}
-/**
- * It's recommended that you don't attempt to style these elements.
- * Firefox's implementation doesn't respect box-sizing, padding, or width.
- *
- * 1. Address box sizing set to `content-box` in IE 8/9/10.
- * 2. Remove excess padding in IE 8/9/10.
- */
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-
-  padding: 0;
-  /* 2 */
-
-}
-/**
- * Fix the cursor style for Chrome's increment/decrement buttons. For certain
- * `font-size` values of the `input`, it causes the cursor style of the
- * decrement button to change from `default` to `text`.
- */
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-/**
- * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
- *    (include `-moz` to future-proof).
- */
-input[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  /* 2 */
-
-  box-sizing: content-box;
-}
-/**
- * Remove inner padding and search cancel button in Safari and Chrome on OS X.
- * Safari (but not Chrome) clips the cancel button when the search input has
- * padding (and `textfield` appearance).
- */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-/**
- * Define consistent border, margin, and padding.
- */
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-/**
- * 1. Correct `color` not being inherited in IE 8/9.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets.
- */
-legend {
-  border: 0;
-  /* 1 */
-
-  padding: 0;
-  /* 2 */
-
-}
-/**
- * Remove default vertical scrollbar in IE 8/9.
- */
-textarea {
-  overflow: auto;
-}
-/**
- * Don't inherit the `font-weight` (applied by a rule above).
- * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
- */
-optgroup {
-  font-weight: bold;
-}
-/* Tables
-   ========================================================================== */
-/**
- * Remove most spacing between table cells.
- */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-td,
-th {
-  padding: 0;
-}
 /*  import mixin */
-.clearfix {
-  display: block;
-  *zoom: 1;
-}
-.clearfix:after {
-  display: block;
-  visibility: hidden;
-  font-size: 0;
-  height: 0;
-  clear: both;
-  content: ".";
-}
-.inline-block {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-}
-.ellipsis {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
+@import "less/_mixin.less";
+
 /*  import variable */
+@import "less/_variable.less";
+
 /* Common */
+
 html,
 body {
-  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Kaku Gothic Pro', 'Meiryo', 'MS PGothic', sans-serif;
-  color: #454545;
-  background-color: #ffffff;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Kaku Gothic Pro', 'Meiryo', 'MS PGothic', sans-serif;
+    color: @text;
+    background-color: @background;
 }
+
 a {
-  color: #1487bd;
+    color: @link;
+    &:hover {
+        color: @hover;
+    }
+    &:visited {
+        color: @visited;
+    }
 }
-a:hover {
-  color: #0f5373;
+
+
+h1,h2,h3,h4,h5,h6 {
+    a,a:hover,a:visited {
+        color: @text-header;
+        text-decoration: none;
+    }
 }
-a:visited {
-  color: #789dae;
-}
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a,
-h1 a:hover,
-h2 a:hover,
-h3 a:hover,
-h4 a:hover,
-h5 a:hover,
-h6 a:hover,
-h1 a:visited,
-h2 a:visited,
-h3 a:visited,
-h4 a:visited,
-h5 a:visited,
-h6 a:visited {
-  color: #333333;
-  text-decoration: none;
-}
+
 a.keyword {
-  text-decoration: none;
-  border-bottom: 1px dotted #dddddd;
-  color: #454545;
+    text-decoration: none;
+    border-bottom: 1px dotted @border;
+    color: @text;
 }
+
 /* Buttons */
+
 .btn {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  padding: 4px 10px 4px;
-  margin-bottom: 0;
-  line-height: 18px;
-  color: #454545;
-  background-color: #ffffff;
-  text-align: center;
-  vertical-align: middle;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-  border-radius: 2px;
-  background-clip: padding-box;
-  cursor: pointer;
-  font-size: 12px;
-  text-decoration: none;
-  font-weight: bold;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  text-decoration: none !important;
+    .inline-block;
+    padding: 4px 10px 4px;
+    margin-bottom: 0;
+    line-height: 18px;
+    color: @text;
+    background-color: @btn;
+    text-align: center;
+    vertical-align: middle;
+    .border-radius(2px);
+    cursor: pointer;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid rgba(0,0,0,.2);
+    text-decoration: none !important;
+    &:hover {
+      background-color: @btn-hover;
+      text-decoration: none !important;
+    }
 }
-.btn:hover {
-  background-color: #f5f5f5;
-  text-decoration: none !important;
-}
+
 .btn-small {
-  padding: 2px 10px !important;
-  font-size: 11px !important;
+    padding: 2px 10px !important;
+    font-size: 11px !important;
 }
+
 .btn-large {
-  padding: 13px 19px;
-  font-size: 17px;
-  line-height: normal;
-  font-weight: bold;
+    padding: 13px 19px;
+    font-size: 17px;
+    line-height: normal;
+    font-weight: bold;
 }
+
 /* ヘッダ（グローバルヘッダ）
   グローバルヘッダの中はiframeですが、
   #globalheader-container に背景色や文字色を指定することでirameの中にも色が反映されます。
 */
+
 #globalheader-container {
-  background-color: #333;
-  color: #fff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
+
 /* container */
+
 #container {
-  width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-  padding-top: 37px;
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding-top: 37px; // グローバルヘッダを fixed にしているため
+
+    #content {
+        .clearfix;
+    }
 }
-#container #content {
-  display: block;
-  *zoom: 1;
-}
-#container #content:after {
-  display: block;
-  visibility: hidden;
-  font-size: 0;
-  height: 0;
-  clear: both;
-  content: ".";
-}
+
 .globalheader-off #container {
-  padding-top: 0;
+    padding-top: 0; // グローバルヘッダ非表示の時
 }
+
 /* 2カラムレイアウト */
+
 #main {
-  width: 600px;
-  float: left;
+    width: 600px;
+    float: left;
 }
+
 #box2 {
-  width: 300px;
-  float: right;
+    width: 300px;
+    float: right;
 }
+
 /* 1カラムにしたい場合は下記のコメントアウトを外してください ----
 
 #main {
@@ -560,538 +165,510 @@ a.keyword {
 }
 
 ---- END 1カラム */
+
 /* header */
+
 #blog-title {
-  margin: 30px 0;
-  padding: 20px 0;
+    margin: 30px 0;
+    padding: 20px 0;
 }
+
 #title {
-  margin: 0;
+    margin: 0;
+    a {
+        color: @text;
+    }
 }
-#title a {
-  color: #454545;
-}
+
 #blog-description {
-  font-weight: normal;
-  font-size: 80%;
-  margin: 5px 0 0 0;
+    font-weight: normal;
+    font-size: 80%;
+    margin: 5px 0 0 0;
 }
+
 /* ヘッダ画像を設定したとき */
-.header-image-enable #title {
-  padding-top: 70px;
+
+.header-image-enable {
+    #title {
+        padding-top: 70px;
+    }
+    #title,
+    #blog-description {
+        padding-left: 20px;
+    }
+
 }
-.header-image-enable #title,
-.header-image-enable #blog-description {
-  padding-left: 20px;
-}
+
 /* パンくず（カテゴリーページで表示されます） */
+
 #top-box {
-  margin: 10px auto 20px;
-  font-size: 90%;
+    margin: 10px auto 20px;
+    font-size: 90%;
+
+    .breadcrumb {
+          border: 1px solid @border;
+          padding: 10px;
+    }
+
 }
-#top-box .breadcrumb {
-  border: 1px solid #dddddd;
-  padding: 10px;
-}
+
 /* entry */
+
 .entry {
-  position: relative;
-  margin-bottom: 100px;
+    position: relative;
+    margin-bottom: 100px;
 }
+
 .entry-header {
-  padding: 0 0 10px 0;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #dddddd;
-  position: relative;
+    padding: 0 0 10px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid @border;
+    position: relative;
 }
+
 .entry-title {
-  margin: 0;
-  line-height: 1.3;
-  font-size: 160%;
+    margin: 0;
+    line-height: 1.3;
+    font-size: 160%;
 }
+
 /* 日付 */
+
 .date {
-  font-weight: bold;
-  margin-bottom: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+    a {
+        color: @link;
+        text-decoration: none;
+        font-size: 90%;
+    }
 }
-.date a {
-  color: #1487bd;
-  text-decoration: none;
-  font-size: 90%;
-}
+
 /* カテゴリ */
+
 .categories {
-  margin-top: 10px;
-  font-size: 80%;
+    margin-top: 10px;
+    font-size: 80%;
+    a {
+        color: @text-light;
+    }
+    &.no-categories {
+        margin: 0;  // カテゴリー無いとき
+    }
 }
-.categories a {
-  color: #999999;
-}
-.categories.no-categories {
-  margin: 0;
-}
+
 /* 「編集する」ボタン */
 .entry-header-menu {
-  position: absolute;
-  bottom: 0px;
-  left: -60px;
+    position: absolute;
+    bottom: 0px;
+    left: -60px;
+    a {
+        .btn;
+    }
 }
-.entry-header-menu a {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  padding: 4px 10px 4px;
-  margin-bottom: 0;
-  line-height: 18px;
-  color: #454545;
-  background-color: #ffffff;
-  text-align: center;
-  vertical-align: middle;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-  border-radius: 2px;
-  background-clip: padding-box;
-  cursor: pointer;
-  font-size: 12px;
-  text-decoration: none;
-  font-weight: bold;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  text-decoration: none !important;
-}
-.entry-header-menu a:hover {
-  background-color: #f5f5f5;
-  text-decoration: none !important;
-}
+
 /* entry-content の中の書式 */
+
 .entry-content {
-  font-size: 95%;
-  line-height: 1.7;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #dddddd;
+    font-size: 95%;
+    line-height: 1.7;
+    padding-bottom: 10px;
+    border-bottom: 1px solid @border;
+
+    p {
+        margin: 0 0 1em 0;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+        margin: 1.3em 0 0.8em 0;
+        line-height: 1.5;
+    }
+
+    h1 {
+        font-size: 160%;
+    }
+
+    h2 {
+        font-size: 150%;
+    }
+
+    h3 {
+        font-size: 140%;
+    }
+
+    h4 {
+        font-size: 130%;
+    }
+
+    h5 {
+        font-size: 110%;
+    }
+
+    h6 {
+        font-size: 100%;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        margin-bottom: 1em;
+
+        img {
+            max-width: none;
+        }
+    }
+
+    table th,
+    table td {
+        border: 1px solid #ddd;
+        padding: 5px 10px;
+    }
+
+    table th {
+        background: @bg-light;
+    }
+
+    blockquote {
+        border: 1px solid @border;
+        margin: 0 0 10px;
+        padding: 20px;
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    pre {
+        border: 1px solid @border;
+        margin: 0 0 10px;
+        padding: 20px;
+        white-space: pre;
+    }
+
+    pre>code {
+        margin: 0;
+        padding: 0;
+        white-space: pre;
+        border: 0;
+        background: transparent;
+        font-family: 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
+    }
+
+    code {
+        font-size: 90%;
+        margin: 0 2px;
+        padding: 0 5px;
+        border: 1px solid #eaeaea;
+        background-color: #f8f8f8;
+        border-radius: 3px;
+        font-family: 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
+    }
+
+    .hatena-asin-detail {
+        li {
+            line-height: 1.4;
+        }
+    }
+
 }
-.entry-content p {
-  margin: 0 0 1em 0;
-}
-.entry-content img {
-  max-width: 100%;
-}
-.entry-content h1,
-.entry-content h2,
-.entry-content h3,
-.entry-content h4,
-.entry-content h5,
-.entry-content h6 {
-  margin: 1.3em 0 0.8em 0;
-  line-height: 1.5;
-}
-.entry-content h1 {
-  font-size: 160%;
-}
-.entry-content h2 {
-  font-size: 150%;
-}
-.entry-content h3 {
-  font-size: 140%;
-}
-.entry-content h4 {
-  font-size: 130%;
-}
-.entry-content h5 {
-  font-size: 110%;
-}
-.entry-content h6 {
-  font-size: 100%;
-}
-.entry-content table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  margin-bottom: 1em;
-}
-.entry-content table img {
-  max-width: none;
-}
-.entry-content table th,
-.entry-content table td {
-  border: 1px solid #ddd;
-  padding: 5px 10px;
-}
-.entry-content table th {
-  background: #f5f5f5;
-}
-.entry-content blockquote {
-  border: 1px solid #dddddd;
-  margin: 0 0 10px;
-  padding: 20px;
-}
-.entry-content blockquote p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.entry-content pre {
-  border: 1px solid #dddddd;
-  margin: 0 0 10px;
-  padding: 20px;
-  white-space: pre;
-}
-.entry-content pre > code {
-  margin: 0;
-  padding: 0;
-  white-space: pre;
-  border: 0;
-  background: transparent;
-  font-family: 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
-}
-.entry-content code {
-  font-size: 90%;
-  margin: 0 2px;
-  padding: 0 5px;
-  border: 1px solid #eaeaea;
-  background-color: #f8f8f8;
-  border-radius: 3px;
-  font-family: 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
-}
-.entry-content .hatena-asin-detail li {
-  line-height: 1.4;
-}
+
 /* entry-footer */
+
 .entry-footer {
-  margin-top: 10px;
+    margin-top: 10px;
 }
+
 .entry-footer-section {
-  font-size: 80%;
-  color: #999999;
+    font-size: 80%;
+    color: @text-light;
+    a {
+        color: @text-light;
+    }
 }
-.entry-footer-section a {
-  color: #999999;
-}
+
 .social-buttons,
 .entry-footer-html {
-  margin: 10px 0;
+    margin: 10px 0;
 }
+
+
 /* コメント */
-.comment-box ul {
-  list-style: none;
-  margin: 0 0 15px 0;
-  padding: 0;
-  font-size: 95%;
-  line-height: 1.7;
+
+.comment-box {
+
+    ul {
+        list-style: none;
+        margin: 0 0 15px 0;
+        padding: 0;
+        font-size: 95%;
+        line-height: 1.7;
+    }
+
+    li {
+        padding: 10px 0 10px 60px;
+        border-bottom: 1px solid @border;
+        position: relative;
+        &:first-child {
+            border-top: 1px solid @border;
+        }
+    }
+
+    .read-more-comments {
+        padding-left: 0;
+    }
+
+    .hatena-id-icon {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 50px !important;
+        height: 50px !important;
+        .border-radius(3px);
+    }
+
 }
-.comment-box li {
-  padding: 10px 0 10px 60px;
-  border-bottom: 1px solid #dddddd;
-  position: relative;
-}
-.comment-box li:first-child {
-  border-top: 1px solid #dddddd;
-}
-.comment-box .read-more-comments {
-  padding-left: 0;
-}
-.comment-box .hatena-id-icon {
-  position: absolute;
-  top: 10px;
-  left: 0;
-  width: 50px !important;
-  height: 50px !important;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-  border-radius: 3px;
-  background-clip: padding-box;
-}
+
 .comment-user-name {
-  margin: 0 0 10px 0;
-  font-weight: bold;
+    margin: 0 0 10px 0;
+    font-weight: bold;
 }
+
 .comment-content {
-  font-size: 90%;
-  margin: 0 0 10px 0;
-  word-wrap: break-word;
+    font-size: 90%;
+    margin: 0 0 10px 0;
+    word-wrap: break-word;
+
+    p {
+        margin: 0 0 10px 0;
+    }
 }
-.comment-content p {
-  margin: 0 0 10px 0;
-}
+
 .comment-metadata {
-  font-size: 80%;
-  color: #999999;
-  margin: 0;
+    font-size: 80%;
+    color: @text-light;
+    margin: 0;
+    a {
+        color: @text-light;
+    }
 }
-.comment-metadata a {
-  color: #999999;
-}
+
 .leave-comment-title {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  padding: 4px 10px 4px;
-  margin-bottom: 0;
-  line-height: 18px;
-  color: #454545;
-  background-color: #ffffff;
-  text-align: center;
-  vertical-align: middle;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-  border-radius: 2px;
-  background-clip: padding-box;
-  cursor: pointer;
-  font-size: 12px;
-  text-decoration: none;
-  font-weight: bold;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  text-decoration: none !important;
+    .btn;
 }
-.leave-comment-title:hover {
-  background-color: #f5f5f5;
-  text-decoration: none !important;
-}
+
 /* sidebar */
+
 #box2 {
-  font-size: 85%;
-  line-height: 1.5;
+    font-size: 85%;
+    line-height: 1.5;
 }
+
 .hatena-module {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
+
 .hatena-module-title {
-  font-weight: bold;
-  margin-bottom: 15px;
-  font-size: 120%;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 120%;
+    a {
+        color: @text;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
-.hatena-module-title a {
-  color: #454545;
-  text-decoration: none;
-}
-.hatena-module-title a:hover {
-  text-decoration: underline;
-}
+
 /* Profile module */
-.hatena-module-profile .profile-icon {
-  float: left;
-  margin: 0 10px 10px 0;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-  border-radius: 5px;
-  background-clip: padding-box;
+
+.hatena-module-profile {
+
+    .profile-icon {
+        float: left;
+        margin: 0 10px 10px 0;
+        .border-radius(5px);
+    }
+
+    .id {
+        display: block;
+        font-weight: bold;
+        font-size: 110%;
+        margin-bottom: 5px;
+    }
+
+    .profile-description {
+        font-size: 90%;
+        p{
+            margin-top: 0;
+        }
+    }
+
 }
-.hatena-module-profile .id {
-  display: block;
-  font-weight: bold;
-  font-size: 110%;
-  margin-bottom: 5px;
-}
-.hatena-module-profile .profile-description {
-  font-size: 90%;
-}
-.hatena-module-profile .profile-description p {
-  margin-top: 0;
-}
+
 /* urllist module
     リンク・最新記事・最近のコメント・月別アーカイブ・カテゴリモジュールは .hatena-urllist という共通の class が振られます
 */
+
 .hatena-urllist {
-  list-style: none;
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
+    list-style: none;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+
+    li {
+        padding: 8px 0;
+        border-bottom: 1px solid @border;
+        line-height: 1.5;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
 }
-.hatena-urllist li {
-  padding: 8px 0;
-  border-bottom: 1px solid #dddddd;
-  line-height: 1.5;
-}
-.hatena-urllist li a {
-  text-decoration: none;
-}
+
 /* Search module */
-.hatena-module-search-box .search-form {
-  border: 1px solid #dddddd;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-  border-radius: 3px;
-  background-clip: padding-box;
-  width: 100%;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  position: relative;
+
+.hatena-module-search-box {
+
+    .search-form {
+        border: 1px solid @border;
+        .border-radius(3px);
+        width: 100%;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .search-module-input {
+        padding: 5px;
+        color: @text;
+        background: none;
+        border: none;
+        outline: none;
+        height: 20px;
+        width: 90%;
+    }
+
+    .search-module-button {
+        width: 20px;
+        height: 20px;
+        background: transparent url(http://blog.hatena.ne.jp/images/theme/search.png) no-repeat right center;
+        border: none;
+        outline: none;
+        text-indent: -9999px;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        .opacity(.5);
+        &:hover {
+            .opacity(.85);
+        }
+    }
 }
-.hatena-module-search-box .search-module-input {
-  padding: 5px;
-  color: #454545;
-  background: none;
-  border: none;
-  outline: none;
-  height: 20px;
-  width: 90%;
-}
-.hatena-module-search-box .search-module-button {
-  width: 20px;
-  height: 20px;
-  background: transparent url(http://blog.hatena.ne.jp/images/theme/search.png) no-repeat right center;
-  border: none;
-  outline: none;
-  text-indent: -9999px;
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-}
-.hatena-module-search-box .search-module-button:hover {
-  opacity: 0.85;
-  filter: alpha(opacity=85);
-}
+
 /* Pager */
+
 .pager {
-  margin: 1em 0;
-  display: block;
-  *zoom: 1;
+    margin: 1em 0;
+    .clearfix;
+
+    .pager-prev {
+        float: left;
+        text-align: left;
+        width: 45%;
+    }
+
+    .pager-next {
+        float: right;
+        text-align: right;
+        width: 45%;
+    }
+
 }
-.pager:after {
-  display: block;
-  visibility: hidden;
-  font-size: 0;
-  height: 0;
-  clear: both;
-  content: ".";
-}
-.pager .pager-prev {
-  float: left;
-  text-align: left;
-  width: 45%;
-}
-.pager .pager-next {
-  float: right;
-  text-align: right;
-  width: 45%;
-}
+
 /* Footer */
+
 #footer {
-  padding: 30px 0;
-  text-align: center;
-  color: #999999;
-  line-height: 1.5;
-  font-size: 80%;
+    padding: 30px 0;
+    text-align: center;
+    color: @text-light;
+    line-height: 1.5;
+    font-size: 80%;
+
+    p {
+        margin: 0;
+    }
+
+    a {
+        color: @text-light;
+    }
+
 }
-#footer p {
-  margin: 0;
-}
-#footer a {
-  color: #999999;
-}
+
 /* About ページ */
-.page-about dt {
-  font-size: 16px;
-  font-weight: bold;
-  border-bottom: 1px solid #dfdfdf;
-  margin-bottom: 5px;
+
+.page-about {
+
+    dt {
+        font-size: 16px;
+        font-weight: bold;
+        border-bottom: 1px solid #dfdfdf;
+        margin-bottom: 5px;
+    }
+
+    dd {
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
 }
-.page-about dd {
-  margin-left: 0;
-  margin-bottom: 30px;
-}
+
 /* archive ページ */
-.page-archive .archive-entries .archive-entry {
-  margin-bottom: 3em;
+
+.page-archive {
+
+    .archive-entries {
+
+        .archive-entry {
+            margin-bottom: 3em;
+        }
+
+        .entry-title {
+            font-size: 130%;
+            margin: 0 0 .5em;
+        }
+
+        .categories {
+            margin: 0 0 .5em;
+        }
+
+        .entry-description {
+            margin: 0 0 1em;
+            line-height: 1.7em;
+            font-size: 95%;
+        }
+
+    }
+
+    .categories a {
+        color: #fff;
+        font-size: 70%;
+        background: #aaa;
+        padding: 3px 5px;
+        border-radius: 3px;
+        text-decoration: none;
+        .inline-block;
+        margin-right: 2px;
+    }
+
 }
-.page-archive .archive-entries .entry-title {
-  font-size: 130%;
-  margin: 0 0 .5em;
-}
-.page-archive .archive-entries .categories {
-  margin: 0 0 .5em;
-}
-.page-archive .archive-entries .entry-description {
-  margin: 0 0 1em;
-  line-height: 1.7em;
-  font-size: 95%;
-}
-.page-archive .categories a {
-  color: #fff;
-  font-size: 70%;
-  background: #aaa;
-  padding: 3px 5px;
-  border-radius: 3px;
-  text-decoration: none;
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  margin-right: 2px;
-}
+
+
+
 /*  import media queries */
-/* Media Queries - Retina Display */
-@media (-webkit-min-device-pixel-ratio: 2) {
-  .hatena-module-search-box .search-module-button {
-    background: transparent url(http://blog.hatena.ne.jp/images/theme/search@2x.png) no-repeat right center;
-    background-size: 20px 20px;
-  }
-}
-/* Media Queries - Tablet */
-@media (min-width: 768px) and (max-width: 1024px) {
-  #container {
-    width: 724px;
-  }
-  #main {
-    width: 460px;
-  }
-  #box2 {
-    width: 245px;
-  }
-  /* 1カラムにしたい場合は下記のコメントアウトを外してください ----
-                                                                                                                                                                                      #main,
-                                                                                                                                                                                      #box2 {
-                                                                                                                                                                                          width: 100%;
-                                                                                                                                                                                      }
-
-                                                                                                                                                                                      #box2-inner {
-                                                                                                                                                                                          width: 744px;
-
-                                                                                                                                                                                      }
-
-                                                                                                                                                                                      .hatena-module {
-                                                                                                                                                                                          width: 228px;
-                                                                                                                                                                                      }
-                                                                                                                                                                                  ---- END 1カラム */
-}
-/* Media Queries - Small Tablet & Smartphone */
-@media (max-width: 767px) {
-  #globalheader-container {
-    position: static;
-  }
-  #container {
-    width: 93.75%;
-    word-wrap: break-word;
-    overflow: hidden;
-  }
-  #main {
-    width: 100%;
-    float: none;
-  }
-  #box2 {
-    width: 100%;
-    float: none;
-  }
-  #box2-inner {
-    width: 100%;
-  }
-  .hatena-module {
-    width: 100%;
-    float: none;
-  }
-  .entry-header-menu {
-    top: -30px;
-    left: 0px;
-  }
-}
-/* Media Queries - Smartphone */
-@media (max-width: 480px) {
-
-}
+@import "less/_media-queries.less";
