@@ -22,11 +22,10 @@
 html {
   font-family: sans-serif;
   /* 1 */
-
   -ms-text-size-adjust: 100%;
+  /* 2 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
-
 }
 /**
  * Remove default margin.
@@ -65,10 +64,8 @@ progress,
 video {
   display: inline-block;
   /* 1 */
-
   vertical-align: baseline;
   /* 2 */
-
 }
 /**
  * Prevent modern browsers from displaying `audio` without controls.
@@ -224,13 +221,10 @@ select,
 textarea {
   color: inherit;
   /* 1 */
-
   font: inherit;
   /* 2 */
-
   margin: 0;
   /* 3 */
-
 }
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
@@ -261,10 +255,8 @@ input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
-
   cursor: pointer;
   /* 3 */
-
 }
 /**
  * Re-set default cursor for disabled elements.
@@ -299,10 +291,8 @@ input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
-
   padding: 0;
   /* 2 */
-
 }
 /**
  * Fix the cursor style for Chrome's increment/decrement buttons. For certain
@@ -321,11 +311,9 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   /* 2 */
-
   box-sizing: content-box;
 }
 /**
@@ -352,10 +340,8 @@ fieldset {
 legend {
   border: 0;
   /* 1 */
-
   padding: 0;
   /* 2 */
-
 }
 /**
  * Remove default vertical scrollbar in IE 8/9/10/11.
@@ -490,7 +476,7 @@ a.keyword {
 }
 /* ヘッダ（グローバルヘッダ）
   グローバルヘッダの中はiframeですが、
-  #globalheader-container に背景色や文字色を指定することでirameの中にも色が反映されます。
+  #globalheader-container に背景色や文字色を指定することでiframeの中にも色が反映されます。
 */
 #globalheader-container {
   background-color: #333;
@@ -1046,20 +1032,20 @@ a.keyword {
     width: 245px;
   }
   /* 1カラムにしたい場合は下記のコメントアウトを外してください ----
-      #main,
-      #box2 {
-          width: 100%;
-      }
-  
-      #box2-inner {
-          width: 744px;
-  
-      }
-  
-      .hatena-module {
-          width: 228px;
-      }
-  ---- END 1カラム */
+    #main,
+    #box2 {
+        width: 100%;
+    }
+
+    #box2-inner {
+        width: 744px;
+
+    }
+
+    .hatena-module {
+        width: 228px;
+    }
+---- END 1カラム */
 }
 /* Media Queries - Small Tablet & Smartphone */
 @media (max-width: 767px) {
@@ -1070,6 +1056,7 @@ a.keyword {
     width: 93.75%;
     word-wrap: break-word;
     overflow: hidden;
+    padding-top: 0;
   }
   #main {
     width: 100%;
@@ -1092,6 +1079,3 @@ a.keyword {
   }
 }
 /* Media Queries - Smartphone */
-@media (max-width: 480px) {
-  
-}
