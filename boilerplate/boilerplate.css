@@ -403,11 +403,11 @@ body {
 a {
   color: #1487bd;
 }
-a:hover {
-  color: #0f5373;
-}
 a:visited {
   color: #789dae;
+}
+a:hover {
+  color: #0f5373;
 }
 h1 a,
 h2 a,
