@@ -1,4 +1,10 @@
-# Boilerplate
+# Boilerplate Less （開発終了）
+
+このリポジトリは旧バージョンのBoilerplateです。現在は下記URLで開発しています。
+
+- <https://github.com/hatena/Hatena-Blog-Theme-Boilerplate>
+
+<hr>
 
 Boilerplate は、はてなブログのデザインCSSカスタマイズの土台に適したデザインテーマです。
 
